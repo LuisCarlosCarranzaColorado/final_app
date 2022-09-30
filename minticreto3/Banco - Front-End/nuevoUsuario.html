@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su banco</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Hospital en casa</h1>
+        <nav>
+            <a href="#"><button>Iniciar Sesión</button></a>
+            <a href="nuevoUsuario.html"><button>Registrarse</button></a>
+        </nav>
+    </div>
+        
+    <div class="signUp_user" id="info">
+        <div class="container_signUp_user" id="formData">
+            <h2>Registrarse</h2>
+            <form name="registro" method="post">
+                <input type="number" name="no_cedula" placeholder="no_cedula" required>
+                <br>
+                <input type="text" name="primer_nombre" placeholder="primer_nombre" required>
+                <br>
+                <input type="text" name="segundo_nombre" placeholder="segundo_nombre" required>
+                <br>
+                <input type="text" name="primer_apellido" placeholder="primer_apellido" required>
+                <br>
+                <input type="text" name="segundo_apellido" placeholder="segundo_apellido" required>
+                <br>
+                <input type="email" name="email" placeholder="email" required>
+                <br>
+                <input type="text" name="no_celular" placeholder="no_celular" required>
+                <br>
+                <input type="text" name="rol" placeholder="rol" required>
+                <br>
+                <input type="text" name="contrasena" placeholder="contrasena" required>
+                <br>
+                <input type="date" name="fecha_nacimiento" placeholder="fecha_nacimiento" required>
+                <br>
+                <input type="text" name="ubicacion_gps_latitud" placeholder="ubicacion_gps_latitud" required>
+                <br>
+                <input type="text" name="ubicacion_gps_longitud" placeholder="ubicacion_gps_longitud" required>
+                <br>
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+    </div>
+        
+    <footer>
+        <h2>Misión TIC 2022</h2>
+    </footer>
+
+    <script src="js/nuevoUsuario.js"></script>
+</body>
+</html>

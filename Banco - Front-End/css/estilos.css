@@ -1,0 +1,212 @@
+body{
+    margin: 0 0 0 0;
+}
+
+.header{
+    margin: 0%;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+    min-height: 100px;
+    background-color: #31087d ;
+    color:#E5E7E9 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 
+}
+#medico{
+    /*min-height: 100px;*/
+    background-color: #31087d ;
+    color:#e6e9e5 ;
+    display: flex;
+    justify-content:center;
+}
+
+#inicio{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: red;
+}
+
+#link_medico{
+    /*min-height: 100px;*/
+    /*background-color: #31087d ;*/
+    color:#e6e9e5 ;
+    display: flex;
+    justify-content:center;
+    font-size: larger;
+}
+.header nav {
+    height: 100%;
+    width: 100%;
+    justify-content:space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #692e1a;
+    font-size:larger;
+    place-self:;
+}
+
+
+.main-component:div{
+    height: 100%;
+    width: 50%;
+    justify-content:space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #692e1a;
+    font-size:larger;
+}
+.main-component:h4{
+    height: 100%;
+    width: 100%;
+    justify-content:space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #692e1a;
+    font-size:larger;
+}
+.header nav button{
+    color: #E5E7E9;
+    background: #060c75;
+    border: 1px solid #E5E7E9;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: large;
+}
+
+.header nav button:hover{
+    color: #087d0c;
+    background: #e32807;
+    border: 1px solid #087d0c;
+}
+
+footer{
+    /*margin: 50%;*/
+    /*padding: 0%;*/
+    /*width: 100%;*/
+    height: 100;
+    /*min-height: 100px;*/
+    background-color: #31087d ;
+    color:#E5E7E9 ;
+    display: flex;
+    justify-content:center;
+    /*align-items: center;*/
+}
+
+h2{
+    color:red ;
+     
+     font-weight: 100;
+     display: flex;
+     justify-content:center;
+}
+
+h3{
+    color:red ; 
+     /*min-height: 100px;*/
+     /*background-color: #31087d;*/
+     display: flex;
+     justify-content:space-evenly;
+}
+h4{
+    /*min-height: 100px;*/
+    background-color: #31087d ;
+    color:#e6e9e5 ;
+    display: flex;
+    justify-content:center;
+}
+li{
+    color:red ; 
+     /*min-height: 100px;*/
+     /*background-color: #31087d ;*/
+     /*color:#E5E7E9 ;*/
+     display: flex;
+     font-size: large;
+     justify-content:center;
+}
+
+footer h2{
+    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.signUp_user{
+
+    margin: 1%;
+    border: 0%;
+    padding: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_signUp_user {
+    border: 
+     solid #083803;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUp_user h2{
+    color: #283747;
+}
+
+.signUp_user form{
+    width: 70%;
+}
+
+.signUp_user input{
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: 1px solid #473028;
+    font-size: large;
+}
+
+.signUp_user input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    color: #E5E7E9;
+    background: #4b0bca;
+    border: 1px solid #E5E7E9;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 5px 0 25px 0;
+}
+
+.signUp_user input[type="submit"]:hover{
+    color: #E5E7E9;
+    background: crimson;
+    border: 1px solid #283747;
+}
