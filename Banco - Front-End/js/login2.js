@@ -34,7 +34,7 @@ function login(data) {
                 throw new Error(response.text());
         })
         .then(data => {
-            if (data.includes("Credenciales inválidas")) {
+            if (data.includes("CUENTA INVALIDA")) {
                 handleError(data);
             }
             console.log("datos recibidos de la promesa "+data);
@@ -65,8 +65,9 @@ function handleSuccess(data) {
         if (a == "Medico")
             //console.log ("eres medico: "+a)
             window.location.href = './medico.html?id=' + data.id;
-        else
+        else 
             console.log ("no eres medico")
+        
 }
 
 function handleError(err) {

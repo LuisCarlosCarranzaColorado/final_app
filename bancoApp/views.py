@@ -432,7 +432,7 @@ def updateMedico(request, no_cedula):
 
             Medico.especialidad = data["especialidad"]
             Medico.save()
-            return HttpResponse("medico actualizado")
+            return HttpResponse("la especialidad se actualizo")
         except:
             return HttpResponseBadRequest("Error en los datos enviados")
     else:

@@ -15,6 +15,18 @@ body{
     align-items: center;
 }
 
+
+#ref{
+    /*width: 100%;
+    text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e6f119;
+    font-size: large;
+}
+
 #titulo{
     width: 100%;
     text-align: center;
@@ -22,11 +34,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 
+    /*font-size:large; */
 }
 #medico{
     /*min-height: 100px;*/
-    background-color: #31087d ;
+    background-color: #19933e ;
     color:#e6e9e5 ;
     display: flex;
     justify-content:center;
@@ -46,7 +58,7 @@ body{
 #link_medico{
     /*min-height: 100px;*/
     /*background-color: #31087d ;*/
-    color:#e6e9e5 ;
+    color:#c8d1c5 ;
     display: flex;
     justify-content:center;
     font-size: larger;
@@ -57,11 +69,11 @@ body{
     justify-content:space-evenly;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    align-items: center;
+    align-items:center;
     font-size: 50px;
     color: #692e1a;
     font-size:larger;
-    place-self:;
+    place-self:inherit
 }
 
 
@@ -87,6 +99,9 @@ body{
     color: #692e1a;
     font-size:larger;
 }
+.img-container {
+    text-align: center;
+  }
 .header nav button{
     color: #E5E7E9;
     background: #060c75;
@@ -103,6 +118,7 @@ body{
 }
 
 footer{
+    
     /*margin: 50%;*/
     /*padding: 0%;*/
     /*width: 100%;*/
