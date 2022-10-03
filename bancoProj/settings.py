@@ -108,11 +108,11 @@ DATABASES = {
         'USER': 'qsoycmcvatcygz',
         'PASSWORD': 'cb377238ca999961b09e293fa55c2569aa2ebbd3bf1c6c85438a75ccaf65a2db',
         'HOST': 'ec2-34-231-42-166.compute-1.amazonaws.com',
-        'PORT': '5432'
-        'TEST':{'MIRROR','default',},
+        'PORT': '5432',
+        #'TEST':{'MIRROR','default',},
     }
-}
-"""
+}"""
+
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 

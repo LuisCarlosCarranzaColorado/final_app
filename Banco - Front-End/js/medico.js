@@ -4,18 +4,18 @@ const getMedicoUrl = 'http://127.0.0.1:8000/getOneMedico/';
 
 function getMedico() {
   const parsedUrl = new URL(window.location.href);
-  console.log("que hay en window.location.href: "+window.location.href);
-  console.log("URL guardada  "+parsedUrl);
+  //console.log("que hay en window.location.href: "+window.location.href);
+  //console.log("URL guardada  "+parsedUrl);
   const id = parsedUrl.searchParams.get("id");
-  console.log("busco id en URL: "+id);
+  //console.log("busco id en URL: "+id);
   const accessToken = sessionStorage.getItem("accessToken");
   const refreshToken = sessionStorage.getItem("refreshToken");
   const clientId = sessionStorage.getItem("clientId");
   const nombre = sessionStorage.getItem("primer_nombre");
-  console.log("token guardado en login: " + accessToken);
-  console.log("refresh guardado en login: " + refreshToken);
-  console.log("id_guardada guardado en login: " + clientId);
-  console.log("nombre guardado en login: " + nombre);
+  //console.log("token guardado en login: " + accessToken);
+  //console.log("refresh guardado en login: " + refreshToken);
+  //console.log("id_guardada guardado en login: " + clientId);
+  //console.log("nombre guardado en login: " + nombre);
 
   fetch(getMedicoUrl + id, {
     headers: {
@@ -23,14 +23,14 @@ function getMedico() {
     }
   })
     .then(response => {
-      console.log("repuesta promesa: "+response);
+      //console.log("repuesta promesa: "+response);
       if (response.ok || response.status == 400)
         return response.text()
       else
         throw new Error(response.status);
     })
     .then(data => {
-      console.log("Datos en la promesa: " + data);
+      //console.log("Datos en la promesa: " + data);
       if (data.includes("No existe cliente con esa cédula")) {
         handleError(data);
       }
@@ -52,8 +52,10 @@ function handleMedico(Medico) {
       <li>enfermero: ${paciente.enfermero}</li>
       <li>------------------------------------</li>
       `;
+    //console.log(paciente)
     accInfo.push(pacientes);
   });
+  console.log(accInfo)
   const usuarios = document.createElement("div");
   //div.style.backgroundColor = "#6ab150";
   usuarios.innerHTML = `
@@ -61,7 +63,9 @@ function handleMedico(Medico) {
     <h3>rol: ${Medico.rol}</h3>
     <h3>especialidad: ${Medico.especialidad}</h3>
     <h4>PACIENTES ASIGNADOS:</h4>`;
-  accInfo.forEach(usuario => usuarios.innerHTML += usuario);
+  console.log(usuarios)
+  accInfo.forEach(x => usuarios.innerHTML += x);
+  console.log(accInfo)
   document.getElementById("cargando").remove();
   const info = document.getElementById("info-customers");
   info.appendChild(usuarios);
@@ -70,7 +74,7 @@ function handleMedico(Medico) {
   sessionStorage.setItem("medico_rol", Medico.rol);
   sessionStorage.setItem("medico_especialidad", Medico.especialidad);
   const especialidad = sessionStorage.getItem("medico_especialidad");
-  console.log("especialidad guardada: "+especialidad)
+  //console.log("especialidad guardada: "+especialidad)
 
 }
 
