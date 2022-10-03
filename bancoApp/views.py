@@ -362,7 +362,7 @@ def updateUsuario(request, id):
 def deleteUsuario(request, no_cedula):
     if request.method == 'DELETE':
         try:
-            Usuario = usuario.objects.filter(no_cedula = no_cedula).first()
+            Usuario = usuario.objects.filter(id = no_cedula).first()
             if (not Usuario):
                 return HttpResponseBadRequest("No existe esa cedula.")
 
@@ -488,7 +488,7 @@ def newSecretario(request):
         try:
             data = json.loads(request.body)
             print(data)
-            llave = usuario.objects.filter(no_cedula = data["no_cedula"]).first()
+            llave = usuario.objects.filter(id = data["no_cedula"]).first()
             if (not llave):
                 return HttpResponseBadRequest("No existe usuario con esa cédula.")
             #else:
@@ -676,7 +676,7 @@ def getOneHC(request, no_cedula):
         if (not Paciente):
             return HttpResponseBadRequest("No existe paciente creado.")
         print(Paciente)
-        Usuario = usuario.objects.filter(no_cedula = no_cedula).first()
+        Usuario = usuario.objects.filter(id = no_cedula).first()
         print(Usuario)
         Hc2 = Paciente.id_paciente    
         print(Hc2)
@@ -768,7 +768,7 @@ def newAcompanante(request):
         try:
             data = json.loads(request.body)
             print(data)
-            llave = usuario.objects.filter(no_cedula = data["no_cedula"]).first()
+            llave = usuario.objects.filter(id = data["no_cedula"]).first()
             if (not llave):
                 return HttpResponseBadRequest("No existe acompañante con esa cédula.")
             llavePac = paciente.objects.filter(id_paciente = data["id_paciente"]).first()

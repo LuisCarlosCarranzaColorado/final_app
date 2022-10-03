@@ -83,9 +83,8 @@ body{
     justify-content:space-evenly;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    align-items: center;
+    align-items: left;
     font-size: 50px;
-    color: #692e1a;
     font-size:larger;
 }
 .main-component:h4{
@@ -144,7 +143,7 @@ h3{
      /*min-height: 100px;*/
      /*background-color: #31087d;*/
      display: flex;
-     justify-content:space-evenly;
+     justify-content:center;
 }
 h4{
     /*min-height: 100px;*/
@@ -153,15 +152,7 @@ h4{
     display: flex;
     justify-content:center;
 }
-li{
-    color:red ; 
-     /*min-height: 100px;*/
-     /*background-color: #31087d ;*/
-     /*color:#E5E7E9 ;*/
-     display: flex;
-     font-size: large;
-     justify-content:center;
-}
+
 
 footer h2{
     
@@ -225,4 +216,19 @@ footer h2{
     color: #E5E7E9;
     background: crimson;
     border: 1px solid #283747;
+}
+
+
+#usuarios{
+    border: #7d0877;
+    color: #4b0bca;
+}
+li{
+    color:rgb(0, 8, 255) ; 
+     /*min-height: 100px;*/
+     /*background-color: #31087d ;*/
+     /*color:#E5E7E9 ;*/
+     display: flex;
+     font-size: large;
+     justify-content:center;
 }
