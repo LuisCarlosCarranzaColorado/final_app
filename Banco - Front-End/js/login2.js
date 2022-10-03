@@ -65,7 +65,9 @@ function handleSuccess(data) {
         if (a == "Medico")
             //console.log ("eres medico: "+a)
             window.location.href = './medico.html?id=' + data.id;
-        else 
+        else if (a == "secretario")
+            window.location.href = './moduloSecretario.html?id=' + data.id;
+        else
             console.log ("no eres medico")
         
 }
