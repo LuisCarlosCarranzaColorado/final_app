@@ -68,13 +68,10 @@ function handleSuccess(data) {
         else if (a == "secretario")
             window.location.href = './moduloSecretario.html?id=' + data.id;
         else
-<<<<<<< HEAD
             console.log ("no eres medico")
-        
-=======
+
             console.log ("paciente");
 
->>>>>>> 2a8ec94abe09533cb8fc900ade3e5db2efd48d04
 }
 
 function handleError(err) {

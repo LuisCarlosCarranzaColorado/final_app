@@ -218,11 +218,13 @@ footer h2{
     border: 1px solid #283747;
 }
 
-
-#usuarios{
-    border: #7d0877;
-    color: #4b0bca;
+table tr, th {
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(159, 226, 203);
+    border-color: #19933e;
 }
+
 li{
     color:rgb(0, 8, 255) ; 
      /*min-height: 100px;*/

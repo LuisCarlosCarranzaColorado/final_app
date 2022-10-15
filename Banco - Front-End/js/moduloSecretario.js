@@ -36,16 +36,15 @@ function handleUsuarios(Usuario) {
   
   Usuario.forEach(user => {
     let info = 
-    `<table id="usuarios">
-    <tr>
-      <td>${user.primer_nombre}</td>
-      <td>${user.primer_apellido}</td>
-      <td>${user.id}</td>
-      <td>${user.rol}</td>
-    </tr>
-    </table>`
+    `<ol>
+     <li>${user.primer_nombre}</li>
+     <li>${user.primer_apellido}</li>
+     <li>${user.id}</li>
+     <li>${user.rol}</li>
+      </ol>`
   arrayUsuarios.push(info)
-  });
+  }
+  );
   const usuarios = document.createElement("div");
   arrayUsuarios.forEach(x => usuarios.innerHTML += x);
   document.getElementById("contenedorCargando").remove();
